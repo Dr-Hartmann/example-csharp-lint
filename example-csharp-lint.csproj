@@ -5,5 +5,14 @@
     <RootNamespace>example_csharp_lint</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <!-- <LangVersion>latest</LangVersion>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>latest-all</AnalysisLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <NoWarn>$(NoWarn);SYSLIB0011;SYSLIB0021</NoWarn> -->
   </PropertyGroup>
+  <!-- <ItemGroup>
+    <PackageReference Include="Meziantou.Analyzer" Version="3.0.320" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Unity.Analyzers" Version="1.28.0" PrivateAssets="all" />
+  </ItemGroup> -->
 </Project>
