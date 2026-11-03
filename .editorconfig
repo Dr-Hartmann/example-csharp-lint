@@ -1,0 +1,73 @@
+# ============================================================================
+# ГЛОБАЛЬНЫЕ НАСТРОЙКИ И ПАРАМЕТРЫ ФАЙЛОВ
+# ============================================================================
+# EditorConfig не будет искать настройки выше него.
+root = true
+
+[*]
+charset = utf-8         # Кодировка файлов по умолчанию.
+indent_style = space    # Для отступов используются пробелы, а не символы табуляции.
+indent_size = 4         # Размер отступа по умолчанию — 4 пробела.
+
+# --- ФАЙЛЫ ПРОЕКТОВ VISUAL STUDIO ---
+[*.{csproj,vbproj,vcxproj.filters,proj,projitems,shproj}]
+indent_size = 2
+# --- XML И ФАЙЛЫ КОНФИГУРАЦИИ ---
+[*.{xml,config,props,targets,nuspec,resx,ruleset,vsixmanifest,vsct}]
+indent_size = 2
+# --- JSON ---
+[*.{json,json5,webmanifest}]
+indent_size = 2
+
+# --- ИСХОДНЫЙ КОД ПРОЕКТА ---
+[*.cs]
+indent_size = 4                     # Размер отступа в исходном коде проекта — 4 пробела.
+insert_final_newline = true         # В конце файла должен присутствовать завершающий символ перевода строки.
+charset = utf-8-bom                 # Для исходного кода используется UTF-8 с BOM.
+trim_trailing_whitespace = true     # Пробелы и табуляция в конце строк удаляются.
+
+
+# --- УРОВЕНЬ СТРОГОСТИ АНАЛИЗАТОРОВ ---
+[*.cs]
+dotnet_analyzer_diagnostic.severity = warning   # Уровень по умолчанию для диагностик анализаторов .NET в исходном коде проекта.
+
+# --- СТИЛЬ .NET: КВАЛИФИКАТОРЫ И ИМЕНА ТИПОВ ---
+[*.cs]
+dotnet_style_qualification_for_field = false:error                        # Не требовать this. при обращении к полям.
+dotnet_style_qualification_for_property = false:error                     # Не требовать this. при обращении к свойствам.
+dotnet_style_qualification_for_method = false:error                       # Не требовать this. при вызове методов.
+dotnet_style_qualification_for_event = false:error                        # Не требовать this. при обращении к событиям.
+dotnet_style_predefined_type_for_locals_parameters_members = true:error   # Предпочитать ключевые слова языка именам типов .NET при объявлении локальных переменных, параметров и членов.
+dotnet_style_predefined_type_for_member_access = true:error               # Предпочитать ключевые слова языка именам типов .NET при обращении к статическим членам типов.
+
+
+# --- СТИЛЬ .NET: МОДИФИКАТОРЫ ДОСТУПА И ПОРЯДОК МОДИФИКАТОРОВ ---
+dotnet_style_require_accessibility_modifiers = always:error   # Требовать явный модификатор доступности у объявлений.
+csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:warning # Предпочтительный порядок модификаторов в C#.
+dotnet_style_readonly_field = true:error                      # Предпочитать readonly для полей, значение которых не меняется после инициализации.
+
+# --- СТИЛЬ .NET: СКОБКИ ---
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:warning # Использовать скобки в арифметических выражениях, когда они делают порядок вычислений нагляднее.
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:warning # Использовать скобки в операциях сравнения, когда они повышают ясность выражения.
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:warning      # Использовать скобки в остальных бинарных выражениях, когда это улучшает читаемость.
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning           # Не добавлять скобки вокруг выражений, если без них смысл остаётся однозначным.
+
+
+
+
+
+
+
+
+
+# --- ПЕРЕОПРЕДЕЛЕНИЕ ДИАГНОСТИК КОМПИЛЯТОРА ---
+[*.cs]
+dotnet_diagnostic.CS0067.severity = none    # Для C# вне Assets/Game отключить предупреждение о событии, которое нигде не используется.
+dotnet_diagnostic.CS0618.severity = none    # Для C# вне Assets/Game отключить предупреждение об использовании устаревшего API.
+
+[Assets/Game/**/*.cs]
+dotnet_diagnostic.CS0067.severity = error   # В исходном коде игры считать неиспользуемые события ошибкой.
+dotnet_diagnostic.CS0618.severity = error   # В исходном коде игры считать использование устаревшего API ошибкой.
+dotnet_diagnostic.UNT0008.severity = error  # Запрещать условный доступ ?. к объектам Unity: Unity переопределяет сравнение с null, поэтому такая конструкция может работать некорректно.
+dotnet_diagnostic.UNT0007.severity = error  # Запрещать оператор ?? для объектов Unity: Unity переопределяет сравнение с null, поэтому стандартная семантика оператора не подходит.
+dotnet_analyzer_diagnostic.category-Style.severity = error  # Все диагностики категории Style в исходном коде игры повышаются до уровня ошибки.
