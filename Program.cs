@@ -13,11 +13,9 @@ namespace MessyCode // IDE0130
             helper.PrintMessage("Привет, мир!"); // Лишние пробелы
         }
     }
-
     class Helper
     {
         private string _message; // CS8618
-
         public void PrintMessage(string msg)
         {
             this._message = msg; // IDE0003

@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 # --- СТИЛЬ .NET: ИНИЦИАЛИЗАЦИЯ И ВЫРАЖЕНИЯ ---
 # Предпочитать инициализаторы объектов вместо последовательного присваивания свойств после создания объекта.
 dotnet_style_object_initializer = true:warning
@@ -33,7 +21,6 @@ dotnet_style_prefer_compound_assignment = true:warning
 dotnet_style_prefer_simplified_interpolation = true:warning
 # Предпочитать упрощённые логические выражения без лишних сравнений с true или false.
 dotnet_style_prefer_simplified_boolean_expressions = true:warning
-
 # --- СТИЛЬ .NET: ПРОВЕРКА НА NULL ---
 # Предпочитать оператор объединения с NULL (??), когда он заменяет явную проверку на null.
 dotnet_style_coalesce_expression = true:warning
@@ -41,7 +28,6 @@ dotnet_style_coalesce_expression = true:warning
 dotnet_style_null_propagation = true:warning
 # Предпочитать проверку `is null` вместо вызова ReferenceEquals для проверки на null.
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
-
 # --- СТИЛЬ .NET: ДОПОЛНИТЕЛЬНЫЕ ПРАВИЛА ---
 # При переносе выражения на новую строку размещать оператор в начале строки.
 dotnet_style_operator_placement_when_wrapping = beginning_of_line
@@ -65,9 +51,7 @@ csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimenta
 csharp_style_allow_blank_lines_between_consecutive_braces_experimental = true:silent
 # Предпочитать расширенный шаблон свойств, когда он позволяет компактнее записать проверку вложенных свойств.
 csharp_style_prefer_extended_property_pattern = true:suggestion
-
 # --- СТИЛЬ C#: НЕЯВНО ТИПИЗИРОВАННЫЕ ПЕРЕМЕННЫЕ VAR ---
-
 [Assets/Game/**/*.{cs,csx,cake}]
 # Предпочитать var при объявлении переменных встроенных типов (int, string и т. п.).
 csharp_style_var_for_built_in_types = true:warning
@@ -75,7 +59,6 @@ csharp_style_var_for_built_in_types = true:warning
 csharp_style_var_when_type_is_apparent = true:warning
 # Предпочитать var и в остальных случаях.
 csharp_style_var_elsewhere = true:warning
-
 # --- СТИЛЬ C#: ВЫРАЖЕНИЯ С ТЕЛОМ-ВЫРАЖЕНИЕМ ---
 # Предпочитать тело-выражение для методов, когда тело состоит из одного выражения.
 csharp_style_expression_bodied_methods = true:warning
@@ -93,7 +76,6 @@ csharp_style_expression_bodied_accessors = true:warning
 csharp_style_expression_bodied_lambdas = true:warning
 # Предпочитать тело-выражение для локальных функций.
 csharp_style_expression_bodied_local_functions = true:warning
-
 # --- СТИЛЬ C#: СОПОСТАВЛЕНИЕ С ОБРАЗЦОМ (PATTERN MATCHING) ---
 # Предпочитать сопоставление с образцом вместо проверки is с последующим приведением типа.
 csharp_style_pattern_matching_over_is_with_cast_check = true:warning
@@ -105,7 +87,6 @@ csharp_style_prefer_switch_expression = true:warning
 csharp_style_prefer_pattern_matching = true:warning
 # Предпочитать шаблон отрицания `not` вместо логического отрицания вокруг другого шаблона.
 csharp_style_prefer_not_pattern = true:warning
-
 # --- СТИЛЬ C#: ОБЪЯВЛЕНИЯ И ВЫРАЖЕНИЯ ---
 # Предпочитать объявление переменной непосредственно в вызове out.
 csharp_style_inlined_variable_declaration = true:warning
@@ -121,13 +102,11 @@ csharp_style_prefer_index_operator = true:warning
 csharp_style_prefer_range_operator = true:warning
 # Предпочитать неявное создание объекта `new()` при очевидном типе из контекста.
 csharp_style_implicit_object_creation_when_type_is_apparent = true:warning
-
 # --- СТИЛЬ C#: ПРОВЕРКИ НА NULL ---
 # Предпочитать выражение throw внутри условных и других выражений, когда это упрощает код.
 csharp_style_throw_expression = true:warning
 # Предпочитать условный вызов делегата `?.Invoke(...)`, чтобы не проверять его на null вручную.
 csharp_style_conditional_delegate_call = true:warning
-
 # --- СТИЛЬ C#: БЛОКИ КОДА И USING ---
 # Требовать фигурные скобки для управляющих конструкций, даже если их тело состоит из одной инструкции.
 csharp_prefer_braces = true:warning
@@ -139,9 +118,7 @@ dotnet_diagnostic.IDE0063.severity = suggestion
 csharp_using_directive_placement = outside_namespace:warning
 # Предпочитать static для локальных функций, которые не захватывают переменные внешней области.
 csharp_prefer_static_local_function = true:warning
-
 # --- ПРАВИЛА ДЛЯ НЕИСПОЛЬЗУЕМОГО И ИЗБЫТОЧНОГО КОДА ---
-
 [Assets/Game/**/*.{cs,csx,cake,vb,vbx}]
 # Проверять неиспользуемые параметры во всех методах, а не только в публичном API.
 dotnet_code_quality_unused_parameters = all:warning
@@ -149,7 +126,6 @@ dotnet_code_quality_unused_parameters = all:warning
 dotnet_remove_unnecessary_suppression_exclusions = none
 # Включить диагностику IDE0079 на уровне предупреждения.
 dotnet_diagnostic.IDE0079.severity = warning
-
 [Assets/Game/**/*.{cs,csx,cake}]
 # Для неиспользуемого результата выражения предпочитать отбрасывание значения.
 csharp_style_unused_value_expression_statement_preference = discard_variable
@@ -159,9 +135,7 @@ dotnet_diagnostic.IDE0058.severity = error
 csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 # Строгость IDE0059: присвоенное значение нигде не используется.
 dotnet_diagnostic.IDE0059.severity = suggestion
-
 # --- ФОРМАТИРОВАНИЕ: ОБЩИЕ ПАРАМЕТРЫ .NET ---
-
 [Assets/Game/**/*.{cs,csx,cake,vb,vbx}]
 # Сортировать директивы System.* раньше остальных директив using.
 dotnet_sort_system_directives_first = true
@@ -171,9 +145,7 @@ dotnet_separate_import_directive_groups = false
 dotnet_style_namespace_match_folder = true:suggestion
 # Строгость IDE0130: пространство имён не соответствует структуре папок или заданному соглашению.
 dotnet_diagnostic.IDE0130.severity = suggestion
-
 # --- ФОРМАТИРОВАНИЕ C#: ПЕРЕНОСЫ СТРОК ---
-
 [Assets/Game/**/*.{cs,csx,cake}]
 # Переносить открывающую фигурную скобку на новую строку для всех поддерживаемых конструкций.
 csharp_new_line_before_open_brace = all
@@ -189,7 +161,6 @@ csharp_new_line_before_members_in_object_initializers = true
 csharp_new_line_before_members_in_anonymous_types = true
 # Разделять части LINQ-выражения переносами строк.
 csharp_new_line_between_query_expression_clauses = true
-
 # --- ФОРМАТИРОВАНИЕ C#: ОТСТУПЫ ---
 # Делать отступ для содержимого секций case.
 csharp_indent_case_contents = true
@@ -203,7 +174,6 @@ csharp_indent_block_contents = true
 csharp_indent_braces = false
 # Не добавлять дополнительный отступ для содержимого case, если оно заключено в отдельный блок.
 csharp_indent_case_contents_when_block = false
-
 # --- ФОРМАТИРОВАНИЕ C#: ПРОБЕЛЫ ---
 # Не ставить пробел после оператора приведения типа.
 csharp_space_after_cast = false
@@ -249,17 +219,14 @@ csharp_space_before_open_square_brackets = false
 csharp_space_between_empty_square_brackets = false
 # Не ставить пробелы внутри квадратных скобок.
 csharp_space_between_square_brackets = false
-
 # --- ФОРМАТИРОВАНИЕ C#: СОХРАНЕНИЕ ОДНОСТРОЧНЫХ КОНСТРУКЦИЙ ---
 # Не сохранять несколько инструкций на одной строке: форматтер может переносить их.
 csharp_preserve_single_line_statements = false
 # Сохранять блоки кода на одной строке, если это допускается форматтером.
 csharp_preserve_single_line_blocks = true
-
 # --- ФОРМАТИРОВАНИЕ C#: ПРОСТРАНСТВА ИМЁН ---
 # Предпочитать файловые пространства имён (file-scoped namespace).
 csharp_style_namespace_declarations = file_scoped:warning
-
 [Assets/Game/**/*.{cs,csx,cake,vb,vbx}]
 # Ширина символа табуляции — 4 позиции.
 tab_width = 4
@@ -271,99 +238,79 @@ dotnet_style_allow_multiple_blank_lines_experimental = false:warning
 dotnet_style_allow_statement_immediately_after_block_experimental = true:silent
 # Применять правила стиля также к коду, на который нет ссылок.
 dotnet_style_prefer_rules_on_unreferenced_code = true
-
 # --- СОГЛАШЕНИЯ ОБ ИМЕНОВАНИИ ---
-
 [Assets/Game/**/*.{cs,csx,cake,vb,vbx}]
 # Каждое правило связывает группу символов с требуемым стилем и уровнем строгости.
-
 # Интерфейсы: имя должно начинаться с заглавной I.
 dotnet_naming_rule.interface_should_be_begins_with_i.severity = error
 dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
 dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
-
 # Типы (классы, структуры, интерфейсы и перечисления): PascalCase.
 dotnet_naming_rule.types_should_be_pascalcase.severity = warning
 dotnet_naming_rule.types_should_be_pascalcase.symbols = types
 dotnet_naming_rule.types_should_be_pascalcase.style = pascalcase
-
 # Свойства, события и методы: PascalCase.
 dotnet_naming_rule.non_field_members_should_be_pascalcase.severity = warning
 dotnet_naming_rule.non_field_members_should_be_pascalcase.symbols = non_field_members
 dotnet_naming_rule.non_field_members_should_be_pascalcase.style = pascalcase
-
 # Перечисления: имя должно начинаться с заглавной E.
 dotnet_naming_rule.enum_should_be_begins_with_e.severity = error
 dotnet_naming_rule.enum_should_be_begins_with_e.symbols = enum
 dotnet_naming_rule.enum_should_be_begins_with_e.style = begins_with_e
-
 # Открытые и защищённые поля: camelCase.
 dotnet_naming_rule.public_or_protected_field_should_be_camelcase.severity = warning
 dotnet_naming_rule.public_or_protected_field_should_be_camelcase.symbols = public_or_protected_field
 dotnet_naming_rule.public_or_protected_field_should_be_camelcase.style = camelcase
-
 # Приватные и internal-поля: camelCase с начальным символом подчёркивания.
 dotnet_naming_rule.private_or_internal_field_should_be_camelcasewith_.severity = warning
 dotnet_naming_rule.private_or_internal_field_should_be_camelcasewith_.symbols = private_or_internal_field
 dotnet_naming_rule.private_or_internal_field_should_be_camelcasewith_.style = camelcasewith_
-
 # Свойства: PascalCase.
 dotnet_naming_rule.property_should_be_pascalcase.severity = warning
 dotnet_naming_rule.property_should_be_pascalcase.symbols = property
 dotnet_naming_rule.property_should_be_pascalcase.style = pascalcase
-
 # Публичные методы: PascalCase.
 dotnet_naming_rule.method_should_be_pascalcase.severity = error
 dotnet_naming_rule.method_should_be_pascalcase.symbols = method
 dotnet_naming_rule.method_should_be_pascalcase.style = pascalcase
-
 # Приватные методы: PascalCase.
 dotnet_naming_rule.private_method_should_be_pascalcase.severity = error
 dotnet_naming_rule.private_method_should_be_pascalcase.symbols = private_method
 dotnet_naming_rule.private_method_should_be_pascalcase.style = pascalcase
-
 # Абстрактные методы: PascalCase.
 dotnet_naming_rule.abstract_method_should_be_pascalcase.severity = error
 dotnet_naming_rule.abstract_method_should_be_pascalcase.symbols = abstract_method
 dotnet_naming_rule.abstract_method_should_be_pascalcase.style = pascalcase
-
 # Статические методы: PascalCase.
 dotnet_naming_rule.static_method_should_be_pascalcase.severity = error
 dotnet_naming_rule.static_method_should_be_pascalcase.symbols = static_method
 dotnet_naming_rule.static_method_should_be_pascalcase.style = pascalcase
-
 # Классы: PascalCase.
 dotnet_naming_rule.class_should_be_pascalcase.severity = error
 dotnet_naming_rule.class_should_be_pascalcase.symbols = class
 dotnet_naming_rule.class_should_be_pascalcase.style = pascalcase
-
 # Делегаты: PascalCase.
 dotnet_naming_rule.delegate_should_be_pascalcase.severity = warning
 dotnet_naming_rule.delegate_should_be_pascalcase.symbols = delegate
 dotnet_naming_rule.delegate_should_be_pascalcase.style = pascalcase
-
 # События: camelCase.
 dotnet_naming_rule.event_should_be_camelcase.severity = warning
 dotnet_naming_rule.event_should_be_camelcase.symbols = event
 dotnet_naming_rule.event_should_be_camelcase.style = camelcase
 dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
 dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
-
 # Публичные и защищённые static readonly-поля: PascalCase.
 dotnet_naming_rule.public_protected_static_readonly_fields_must_be_pascal_case_rule.severity = warning
 dotnet_naming_rule.public_protected_static_readonly_fields_must_be_pascal_case_rule.symbols = public_protected_static_readonly_fields_group
 dotnet_naming_rule.public_protected_static_readonly_fields_must_be_pascal_case_rule.style = pascalcase
 dotnet_naming_rule.parameters_rule.symbols = parameters_group
 dotnet_naming_rule.parameters_rule.style = camelcase
-
 # Параметры методов: camelCase.
 dotnet_naming_rule.parameters_rule.severity = warning
 dotnet_naming_rule.type_parameter_rule.symbols = type_parameter_group
 dotnet_naming_rule.type_parameter_rule.style = prefix_type_parameters_with_t_style
-
 # Параметры типов: PascalCase с префиксом T.
 dotnet_naming_rule.type_parameter_rule.severity = warning
-
 # Спецификации символов определяют, к каким элементам кода применяется правило:
 # В исходнике некоторые спецификации повторены; повторные значения и их порядок сохранены, поскольку более поздняя запись переопределяет раннюю.
 # Интерфейсы.
@@ -442,7 +389,6 @@ dotnet_naming_symbols.public_protected_static_readonly_fields_group.applicable_k
 dotnet_naming_symbols.parameters_group.applicable_kinds = parameter
 # Параметры обобщённых типов и методов.
 dotnet_naming_symbols.type_parameter_group.applicable_kinds = type_parameter
-
 # Стили задают регистр букв, префиксы и суффиксы имён:
 # PascalCase с префиксом T для параметров типов.
 dotnet_naming_style.prefix_type_parameters_with_t_style.required_prefix = T
@@ -472,13 +418,10 @@ dotnet_naming_style.pascalcase.required_prefix =
 dotnet_naming_style.pascalcase.required_suffix = 
 dotnet_naming_style.pascalcase.word_separator = 
 dotnet_naming_style.pascalcase.capitalization = pascal_case
-
 # --- НАСТРОЙКИ СТАТИЧЕСКИХ АНАЛИЗАТОРОВ ---
-
 [Assets/Game/**/*.{cs,csx,cake,vb,vbx}]
 # Включает анализ копирования значений и ссылок для тех диагностик .NET, которые его поддерживают.
 dotnet_code_quality.copy_analysis = true
-
 # --- АНАЛИЗАТОРЫ ROSLYN: СТИЛЬ И УПРОЩЕНИЕ КОДА ---
 # Упрощение имени: удаление лишней квалификации.
 dotnet_diagnostic.IDE0001.severity = suggestion
@@ -510,7 +453,6 @@ dotnet_diagnostic.IDE0059.severity = warning
 dotnet_diagnostic.IDE0161.severity = error
 # Нарушение соглашений об именовании.
 dotnet_diagnostic.IDE1006.severity = warning
-
 # --- АНАЛИЗАТОРЫ .NET: ПРОЕКТИРОВАНИЕ API И ОБЪЕКТНАЯ МОДЕЛЬ ---
 # Назначение каждой диагностики указано в комментарии перед её настройкой.
 # Не объявлять статические члены в обобщённых типах.
@@ -527,7 +469,6 @@ dotnet_diagnostic.CA1036.severity = warning
 dotnet_diagnostic.CA1067.severity = warning
 # Размещать параметр CancellationToken последним в списке параметров.
 dotnet_diagnostic.CA1068.severity = warning
-
 # --- АНАЛИЗАТОРЫ .NET: ГЛОБАЛИЗАЦИЯ, СТРОКИ И СРАВНЕНИЯ ---
 # Назначение каждой диагностики указано в комментарии перед её настройкой.
 # Не передавать строковые литералы вместо локализуемых строк в публичные методы.
@@ -544,7 +485,6 @@ dotnet_diagnostic.CA1308.severity = warning
 dotnet_diagnostic.CA1309.severity = warning
 # Явно задавать StringComparison, чтобы избежать непреднамеренного сравнения с учётом текущей культуры.
 dotnet_diagnostic.CA1310.severity = warning
-
 # --- АНАЛИЗАТОРЫ .NET: ВЗАИМОДЕЙСТВИЕ С ПЛАТФОРМОЙ И НЕУПРАВЛЯЕМЫМ КОДОМ ---
 # Назначение каждой диагностики указано в комментарии перед её настройкой.
 # Не делать методы P/Invoke общедоступными или защищёнными.
@@ -555,7 +495,6 @@ dotnet_diagnostic.CA1416.severity = warning
 dotnet_diagnostic.CA1417.severity = warning
 # Явно задавать способ маршалинга строковых аргументов P/Invoke.
 dotnet_diagnostic.CA2101.severity = warning
-
 # --- АНАЛИЗАТОРЫ .NET: ИМЕНОВАНИЕ И СОГЛАСОВАННОСТЬ API ---
 # Назначение каждой диагностики указано в комментарии перед её настройкой.
 # Идентификаторы не должны различаться только регистром символов.
@@ -566,7 +505,6 @@ dotnet_diagnostic.CA1710.severity = none
 dotnet_diagnostic.CA1711.severity = none
 # Не давать типам имена, совпадающие с именами пространств имён .NET.
 dotnet_diagnostic.CA1724.severity = warning
-
 # --- АНАЛИЗАТОРЫ .NET: ПРОИЗВОДИТЕЛЬНОСТЬ ---
 # Назначение каждой диагностики указано в комментарии перед её настройкой.
 # Не инициализировать поля и переменные явно значениями по умолчанию без необходимости.
@@ -605,7 +543,6 @@ dotnet_diagnostic.CA1836.severity = warning
 dotnet_diagnostic.CA1837.severity = warning
 # Не использовать StringBuilder в строковых параметрах P/Invoke: маршалинг создаёт дополнительные копии и выделения памяти.
 dotnet_diagnostic.CA1838.severity = warning
-
 # --- АНАЛИЗАТОРЫ .NET: НАДЁЖНОСТЬ, ПОТОКИ И АСИНХРОННЫЙ КОД ---
 # Назначение каждой диагностики указано в комментарии перед её настройкой.
 # Удалять условные ветви, условие которых всегда истинно или ложно.
@@ -626,7 +563,6 @@ dotnet_diagnostic.CA2015.severity = warning
 dotnet_diagnostic.CA2016.severity = warning
 # Запечатывать методы, реализующие закрытые интерфейсы, чтобы их нельзя было переопределить за пределами сборки.
 dotnet_diagnostic.CA2119.severity = warning
-
 # --- АНАЛИЗАТОРЫ .NET: ИСКЛЮЧЕНИЯ, КОНТРАКТЫ И КОРРЕКТНОСТЬ API ---
 # Назначение каждой диагностики указано в комментарии перед её настройкой.
 # Повторно выбрасывать исключение через throw без указания переменной, чтобы сохранить исходную трассировку стека.
@@ -657,7 +593,6 @@ dotnet_diagnostic.CA2247.severity = warning
 dotnet_diagnostic.CA2248.severity = warning
 # Использовать String.Contains() вместо String.IndexOf(), если требуется только проверить наличие подстроки.
 dotnet_diagnostic.CA2249.severity = warning
-
 # --- АНАЛИЗАТОРЫ .NET: БЕЗОПАСНОСТЬ ДЕСЕРИАЛИЗАЦИИ ---
 # Назначение каждой диагностики указано в комментарии перед её настройкой.
 # Не использовать небезопасный десериализатор BinaryFormatter.
@@ -708,7 +643,6 @@ dotnet_diagnostic.CA2356.severity = warning
 dotnet_diagnostic.CA2361.severity = warning
 # Не допускать небезопасного использования DataSet или DataTable в автоматически сгенерированных сериализуемых типах.
 dotnet_diagnostic.CA2362.severity = warning
-
 # --- АНАЛИЗАТОРЫ .NET: БЕЗОПАСНОСТЬ XML И КРИПТОГРАФИИ ---
 # Назначение каждой диагностики указано в комментарии перед её настройкой.
 # Не включать небезопасную обработку DTD и внешних сущностей XML.
@@ -997,4 +931,3 @@ dotnet_diagnostic.MA0098.severity = suggestion
 dotnet_diagnostic.MA0099.severity = warning
 # Дополнительная настройка MA0053: не требовать, чтобы каждый открытый класс был sealed.
 MA0053.public_class_should_be_sealed = false
-

@@ -218,187 +218,141 @@ csharp_style_namespace_declarations = file_scoped:warning
 dotnet_naming_rule.interface_should_be_begins_with_i.severity = error
 dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
 dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
-
 dotnet_naming_rule.types_should_be_pascalcase.severity = warning
 dotnet_naming_rule.types_should_be_pascalcase.symbols = types
 dotnet_naming_rule.types_should_be_pascalcase.style = pascalcase
-
 dotnet_naming_rule.non_field_members_should_be_pascalcase.severity = warning
 dotnet_naming_rule.non_field_members_should_be_pascalcase.symbols = non_field_members
 dotnet_naming_rule.non_field_members_should_be_pascalcase.style = pascalcase
-
 dotnet_naming_rule.enum_should_be_begins_with_e.severity = error
 dotnet_naming_rule.enum_should_be_begins_with_e.symbols = enum
 dotnet_naming_rule.enum_should_be_begins_with_e.style = begins_with_e
-
 dotnet_naming_rule.public_or_protected_field_should_be_camelcase.severity = warning
 dotnet_naming_rule.public_or_protected_field_should_be_camelcase.symbols = public_or_protected_field
 dotnet_naming_rule.public_or_protected_field_should_be_camelcase.style = camelcase
-
 dotnet_naming_rule.private_or_internal_field_should_be_camelcasewith_.severity = warning
 dotnet_naming_rule.private_or_internal_field_should_be_camelcasewith_.symbols = private_or_internal_field
 dotnet_naming_rule.private_or_internal_field_should_be_camelcasewith_.style = camelcasewith_
-
 dotnet_naming_rule.property_should_be_pascalcase.severity = warning
 dotnet_naming_rule.property_should_be_pascalcase.symbols = property
 dotnet_naming_rule.property_should_be_pascalcase.style = pascalcase
-
 dotnet_naming_rule.method_should_be_pascalcase.severity = error
 dotnet_naming_rule.method_should_be_pascalcase.symbols = method
 dotnet_naming_rule.method_should_be_pascalcase.style = pascalcase
-
 dotnet_naming_rule.private_method_should_be_pascalcase.severity = error
 dotnet_naming_rule.private_method_should_be_pascalcase.symbols = private_method
 dotnet_naming_rule.private_method_should_be_pascalcase.style = pascalcase
-
 dotnet_naming_rule.abstract_method_should_be_pascalcase.severity = error
 dotnet_naming_rule.abstract_method_should_be_pascalcase.symbols = abstract_method
 dotnet_naming_rule.abstract_method_should_be_pascalcase.style = pascalcase
-
 dotnet_naming_rule.static_method_should_be_pascalcase.severity = error
 dotnet_naming_rule.static_method_should_be_pascalcase.symbols = static_method
 dotnet_naming_rule.static_method_should_be_pascalcase.style = pascalcase
-
 dotnet_naming_rule.class_should_be_pascalcase.severity = error
 dotnet_naming_rule.class_should_be_pascalcase.symbols = class
 dotnet_naming_rule.class_should_be_pascalcase.style = pascalcase
-
 dotnet_naming_rule.delegate_should_be_pascalcase.severity = warning
 dotnet_naming_rule.delegate_should_be_pascalcase.symbols = delegate
 dotnet_naming_rule.delegate_should_be_pascalcase.style = pascalcase
-
 dotnet_naming_rule.event_should_be_camelcase.severity = warning
 dotnet_naming_rule.event_should_be_camelcase.symbols = event
 dotnet_naming_rule.event_should_be_camelcase.style = camelcase
-
 dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
 dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
-
 dotnet_naming_rule.public_protected_static_readonly_fields_must_be_pascal_case_rule.severity = warning
 dotnet_naming_rule.public_protected_static_readonly_fields_must_be_pascal_case_rule.symbols    = public_protected_static_readonly_fields_group
 dotnet_naming_rule.public_protected_static_readonly_fields_must_be_pascal_case_rule.style = pascalcase
-
-
 dotnet_naming_rule.parameters_rule.symbols              = parameters_group
 dotnet_naming_rule.parameters_rule.style = camelcase
 dotnet_naming_rule.parameters_rule.severity = warning
-
 dotnet_naming_rule.type_parameter_rule.symbols              = type_parameter_group
 dotnet_naming_rule.type_parameter_rule.style = prefix_type_parameters_with_t_style
 dotnet_naming_rule.type_parameter_rule.severity = warning
-
 # Symbol specifications
 dotnet_naming_symbols.interface.applicable_kinds = interface
 dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.interface.required_modifiers =
-
 dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum
 dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.types.required_modifiers =
-
 dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, method
 dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.non_field_members.required_modifiers =
-
 dotnet_naming_symbols.enum.applicable_kinds = enum
 dotnet_naming_symbols.enum.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.enum.required_modifiers =
-
 dotnet_naming_symbols.public_or_protected_field.applicable_kinds = field
 dotnet_naming_symbols.public_or_protected_field.applicable_accessibilities = public, protected
 dotnet_naming_symbols.public_or_protected_field.required_modifiers =
-
 dotnet_naming_symbols.private_or_internal_field.applicable_kinds = field
 dotnet_naming_symbols.private_or_internal_field.applicable_accessibilities = internal, private, private_protected
 dotnet_naming_symbols.private_or_internal_field.required_modifiers =
-
 dotnet_naming_symbols.property.applicable_kinds = property
 dotnet_naming_symbols.property.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.property.required_modifiers =
-
 dotnet_naming_symbols.method.applicable_kinds = method
 dotnet_naming_symbols.method.applicable_accessibilities = public
 dotnet_naming_symbols.method.required_modifiers =
-
 dotnet_naming_symbols.private_method.applicable_kinds = method
 dotnet_naming_symbols.private_method.applicable_accessibilities = private
 dotnet_naming_symbols.private_method.required_modifiers =
-
 dotnet_naming_symbols.abstract_method.applicable_kinds = method
 dotnet_naming_symbols.abstract_method.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.abstract_method.required_modifiers = abstract
-
 dotnet_naming_symbols.static_method.applicable_kinds = method
 dotnet_naming_symbols.static_method.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.static_method.required_modifiers = static
-
 dotnet_naming_symbols.class.applicable_kinds = class
 dotnet_naming_symbols.class.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.class.required_modifiers =
-
 dotnet_naming_symbols.delegate.applicable_kinds = delegate
 dotnet_naming_symbols.delegate.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.delegate.required_modifiers =
-
 dotnet_naming_symbols.event.applicable_kinds = event
 dotnet_naming_symbols.event.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.event.required_modifiers =
-
 dotnet_naming_symbols.interface.applicable_kinds = interface
 dotnet_naming_symbols.interface.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
 dotnet_naming_symbols.interface.required_modifiers =
-
 dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum
 dotnet_naming_symbols.types.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
 dotnet_naming_symbols.types.required_modifiers =
-
 dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, method
 dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
 dotnet_naming_symbols.non_field_members.required_modifiers =
-
 dotnet_naming_symbols.public_protected_static_readonly_fields_group.applicable_accessibilities = public, protected, protected_internal
 dotnet_naming_symbols.public_protected_static_readonly_fields_group.required_modifiers         = static, readonly
 dotnet_naming_symbols.public_protected_static_readonly_fields_group.applicable_kinds           = field
-
 dotnet_naming_symbols.parameters_group.applicable_kinds = parameter
-
 dotnet_naming_symbols.type_parameter_group.applicable_kinds = type_parameter
-
 # Naming styles
 dotnet_naming_style.prefix_type_parameters_with_t_style.required_prefix = T
 dotnet_naming_style.prefix_type_parameters_with_t_style.capitalization = pascal_case
-
 dotnet_naming_style.begins_with_i.required_prefix = I
 dotnet_naming_style.begins_with_i.required_suffix =
 dotnet_naming_style.begins_with_i.word_separator =
 dotnet_naming_style.begins_with_i.capitalization = pascal_case
-
 dotnet_naming_style.begins_with_e.required_prefix = E
 dotnet_naming_style.begins_with_e.required_suffix =
 dotnet_naming_style.begins_with_e.word_separator =
 dotnet_naming_style.begins_with_e.capitalization = pascal_case
-
 dotnet_naming_style.camelcase.required_prefix =
 dotnet_naming_style.camelcase.required_suffix =
 dotnet_naming_style.camelcase.word_separator =
 dotnet_naming_style.camelcase.capitalization = camel_case
-
 dotnet_naming_style.camelcasewith_.required_prefix = _
 dotnet_naming_style.camelcasewith_.required_suffix =
 dotnet_naming_style.camelcasewith_.word_separator =
 dotnet_naming_style.camelcasewith_.capitalization = camel_case
-
 dotnet_naming_style.pascalcase.required_prefix =
 dotnet_naming_style.pascalcase.required_suffix =
 dotnet_naming_style.pascalcase.word_separator =
 dotnet_naming_style.pascalcase.capitalization = pascal_case
-
 tab_width = 4
 end_of_line = crlf
 dotnet_style_allow_multiple_blank_lines_experimental = false:warning
 dotnet_style_allow_statement_immediately_after_block_experimental = true:silent
 dotnet_style_prefer_rules_on_unreferenced_code = true
-
 #### Analyzers ####
 dotnet_diagnostic.IDE0001.severity = suggestion
 dotnet_diagnostic.IDE0002.severity = suggestion
@@ -415,7 +369,6 @@ dotnet_diagnostic.IDE0052.severity = error
 dotnet_diagnostic.IDE0059.severity = warning
 dotnet_diagnostic.IDE0161.severity = error
 dotnet_diagnostic.IDE1006.severity = warning
-
 dotnet_code_quality.copy_analysis = true
 dotnet_diagnostic.CA1000.severity = warning
 dotnet_diagnostic.CA1001.severity = warning
@@ -548,7 +501,6 @@ dotnet_diagnostic.CA5400.severity = warning
 dotnet_diagnostic.CA5401.severity = warning
 dotnet_diagnostic.CA5402.severity = warning
 dotnet_diagnostic.CA5403.severity = warning
-
 dotnet_diagnostic.MA0001.severity = warning    # MA0001: StringComparison is missing
 dotnet_diagnostic.MA0002.severity = warning    # MA0002: IEqualityComparer<string> or IComparer<string> is missing
 dotnet_diagnostic.MA0003.severity = suggestion # MA0003: Name parameter
@@ -648,7 +600,6 @@ dotnet_diagnostic.MA0097.severity = warning    # MA0097: A class that implements
 dotnet_diagnostic.MA0098.severity = suggestion # MA0098: Use indexer instead of extension methods
 dotnet_diagnostic.MA0099.severity = warning    # MA0099: Use Explicit enum value instead of 0
 MA0053.public_class_should_be_sealed = false
-
 [*.cs]
 dotnet_diagnostic.CS0067.severity = none
 dotnet_diagnostic.CS0618.severity = none
