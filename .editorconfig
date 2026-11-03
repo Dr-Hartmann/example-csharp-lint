@@ -51,9 +51,9 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning      
 
 # --- ПЕРЕОПРЕДЕЛЕНИЕ ДИАГНОСТИК КОМПИЛЯТОРА ---
 [*.cs]
-dotnet_diagnostic.CS0067.severity = warning    # Для C# вне Assets/Game отключить предупреждение о событии, которое нигде не используется.
-dotnet_diagnostic.CS0618.severity = warning    # Для C# вне Assets/Game отключить предупреждение об использовании устаревшего API.
-[Assets/*.cs]
+dotnet_diagnostic.CS0067.severity = warning    # Для C# вне src/Assets/Game отключить предупреждение о событии, которое нигде не используется.
+dotnet_diagnostic.CS0618.severity = warning    # Для C# вне src/Assets/Game отключить предупреждение об использовании устаревшего API.
+[src/Assets/*.cs]
 dotnet_diagnostic.CS0067.severity = error      # В исходном коде игры считать неиспользуемые события ошибкой.
 dotnet_diagnostic.CS0618.severity = error      # В исходном коде игры считать использование устаревшего API ошибкой.
 dotnet_diagnostic.UNT0008.severity = error     # Запрещать условный доступ ?. к объектам Unity: Unity переопределяет сравнение с null, поэтому такая конструкция может работать некорректно.
